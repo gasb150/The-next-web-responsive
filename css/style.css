@@ -1,3 +1,7 @@
+body {
+  background-color: #eee;
+}
+/*** Typography ***/
 a {
   text-decoration: none;
 }
@@ -8,11 +12,11 @@ h1, h2, h3, .bottom-nav a {
 
 p, .top-nav a {
   font-family: 'Open Sans', sans-serif;
-  
 }
 
-header {
-  padding: 0 20px;
+/*** Header ***/
+
+header .top-nav {
   background-color:#131313;
 }
 
@@ -21,7 +25,50 @@ header nav {
   justify-content: space-between;
 }
 
-header nav:first-child a, li {
+header li a {
   color: #676767;
+}
+
+header .top-nav a:hover {
+  color: white;
+}
+
+header .top-nav .active {
+  color: white;
+}
+
+header li {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+header .bottom-nav li {
+  padding: 15px 10px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+
+header a i {
+  padding: 0 5px;
+}
+
+header .bottom-nav {
+  background-color: white;
+}
+
+header .search i {
+  padding: 0 5px;
+  color: #676767;
+  transform: rotate(90deg);
+}
+
+header .search {
+  background-color: white;
+  border: 0;
+  border-left: 1px solid #eee;
 }
 
