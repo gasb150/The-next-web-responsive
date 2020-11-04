@@ -1,6 +1,7 @@
 body {
   background-color: white;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
@@ -109,7 +110,6 @@ header .search {
                     linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
                     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
   background-repeat: no-repeat;
-  /* background-position: right bottom; */
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -167,9 +167,14 @@ header .search {
   color: #ff4422;
 }
 
-.container h2:hover {
-  color: #131313;
+.news .articles h3:hover, .funding .title a {
+  color:#ff4422;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.container h2:hover, .funding .title a:hover {
+  color: #131313;
 }
 
 .news .articles {
@@ -177,10 +182,6 @@ header .search {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-top: 20px;
-}
-.news .articles h3:hover {
-  color:#ff4422;
-  cursor: pointer;
 }
 
 .news img {
@@ -203,12 +204,34 @@ header .search {
   width: 60px;
   height: 60px;
   position: relative;
+  margin-top: -75px;
   top: 75px;
   left: 10px;
 }
 
+.funding hr {
+  border-top: 1px solid #eee;
+}
+
+.funding .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.funding .title li {
+  display: inline-block;
+  padding: 0 10px;
+  color: #ff4422;
+}
+
+.funding .title li:not(:first-child) {
+  border-left: 1px solid #ff4422;
+}
+
 .indexco h3, .value p {
   margin-left: 90px;
+  padding-bottom: 10px;
 }
 
 .background-tittle {
