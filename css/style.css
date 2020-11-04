@@ -97,6 +97,10 @@ header .search {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
   /* background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png); */
   /* width: 66,66%;
   background-size: cover;
@@ -105,24 +109,20 @@ header .search {
   justify-content: space-around; */
 }
 
-.top-hero{
+.top-hero {
  display: flex;
  justify-content: space-between;
  align-items: flex-start;
- padding: 20px;
- /* background-color: green; */
-}
 
-/* .top-hero .date {
-  margin-top: 20px;
-} */
+}
 
 .top-hero .logo {
   width: 50%;
 }
 
-.bottom-hero{
-  margin-top: 250px;
+.bottom-hero h1 {
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .main .aside{
