@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, .bottom-nav a {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+p, .top-nav a {
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+header {
+  padding: 0 20px;
+  background-color:#131313;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav:first-child a, li {
+  color: #676767;
+}
+
