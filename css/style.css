@@ -16,7 +16,7 @@ h1 {
 }
 
 h2{
-  font-size: 175%;
+  font-size: 150%;
   font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ header .search {
   width: 50%;
 }
 
-.bottom-hero h1 {
+.bottom-hero h1, .aside h2 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
@@ -132,21 +132,18 @@ header .search {
   grid-gap: 10px
 }
 
-.hero .aside h2{
-  padding: 0 20px 30px 20px;
+.hero .aside .news1, .hero .aside .news2 {
+  padding: 20px;
 }
 
 .hero .aside .news1{
-  /* height: 50%; */
   background-image:url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
   background-size: cover;
   display: flex;
   align-items: flex-end;
-
 }
 
 .hero .aside .news2{
-  /* height: 50%; */
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
   background-size: cover;
   display: flex;
