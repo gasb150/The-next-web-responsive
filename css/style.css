@@ -10,6 +10,16 @@ h1, h2, h3, .bottom-nav a {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+h1 {
+  font-size: 300%;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 175%;
+  font-weight: bold;
+}
+
 p, .top-nav a {
   font-family: 'Open Sans', sans-serif;
 }
@@ -82,6 +92,7 @@ header .search {
    display: grid;
    grid-template-columns: 2fr 1fr;
    column-gap: 10px;
+   color: white;
  }
 .top-hero{
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
@@ -101,13 +112,10 @@ header .search {
 .bottom-hero{
   margin-top: 250px;
 }
-.bottom-hero h3{
- font-size: 300%;
- font-weight: bold;
-}
 
 .main .aside{
   display:grid;
+  grid-template-rows: 1fr 1fr;
   gap:10px
 }
 
@@ -123,6 +131,6 @@ header .search {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
   background-size: cover;
   display: flex;
-  align-items: flex-end;
-
+  flex-direction: column;
+  justify-content: flex-end;
 }
