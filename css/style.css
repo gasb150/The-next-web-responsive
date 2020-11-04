@@ -128,7 +128,7 @@ header .search {
   width: 50%;
 }
 
-.bottom-hero h1, .aside h2 {
+.bottom-hero h1, .aside h2, .articles2 h2 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
@@ -140,7 +140,7 @@ header .search {
   grid-gap: 10px
 }
 
-.hero .aside .news1, .hero .aside .news2 {
+.hero .aside .news1, .image {
   padding: 20px;
 }
 
@@ -152,13 +152,18 @@ header .search {
   align-items: flex-end;
 }
 
-.hero .aside .news2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
+.image {
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.news2 {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
+  /* background-size: cover; */
 }
 
 .container h2 {
@@ -265,3 +270,36 @@ header .search {
   color:#676767;
 }
 
+.articles2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  color: white;
+}
+
+.articles2 .image {
+  height: 300px;
+  margin-top: 10px;
+}
+
+.articles2 h2 {
+  color: white;
+}
+
+.articles2 h2:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.articles2 .hard-fork {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
+}
+.articles2 .apps {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
+}
+.articles2 .gear {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
+}
