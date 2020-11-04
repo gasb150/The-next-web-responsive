@@ -133,7 +133,7 @@ header .search {
   padding-bottom: 10px;
 }
 
-.hero .aside{
+.hero .aside {
   display: grid;
   height: 100%;
   grid-template-rows: 1fr 1fr;
@@ -144,7 +144,7 @@ header .search {
   padding: 20px;
 }
 
-.hero .aside .news1{
+.hero .aside .news1 {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
                     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
   background-size: cover;
@@ -152,7 +152,7 @@ header .search {
   align-items: flex-end;
 }
 
-.hero .aside .news2{
+.hero .aside .news2 {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
                     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
   background-size: cover;
@@ -178,7 +178,7 @@ header .search {
   gap: 20px;
   margin-top: 20px;
 }
-.news .articles h3:hover{
+.news .articles h3:hover {
   color:#ff4422;
   cursor: pointer;
 }
@@ -199,7 +199,7 @@ header .search {
   cursor: pointer;
 }
 
-.indexco-articles img{
+.indexco-articles img {
   width: 60px;
   height: 60px;
   position: relative;
@@ -207,35 +207,38 @@ header .search {
   left: 10px;
 }
 
-.indexco h3, .value p{
+.indexco h3, .value p {
   margin-left: 90px;
 }
 
-.background-tittle{
+.background-tittle {
   background-color: #ff4422;
   color: white;
 }
 
-.indexco p{
+.indexco p {
   color: #2e2d2d;
 }
-.value{
+
+.value {
   background-color: #ffebe7;
 }
-.tags{
+
+.tags {
   padding: 15px 0; 
 }
-.tags p, .indexco-footer{
+
+.tags p, .indexco-footer {
   padding: 10px;
 }
-.tags p:hover{
+.tags p:hover {
   color:#020202;
 } 
-.indexco-footer{
+.indexco-footer {
   line-height: 1.5;
 }
 
-.indexco a{
+.indexco a {
   color:#676767;
 }
 
