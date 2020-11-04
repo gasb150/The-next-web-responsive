@@ -195,6 +195,10 @@ header .search {
   gap:25px;
 }
 
+.indexco * {
+  cursor: pointer;
+}
+
 .indexco-articles img{
   width: 60px;
   height: 60px;
@@ -207,10 +211,13 @@ header .search {
   margin-left: 90px;
 }
 
-
-
 .background-tittle{
-  background-color: #ff4422;;
+  background-color: #ff4422;
+  color: white;
+}
+
+.indexco p{
+  color: #2e2d2d;
 }
 .value{
   background-color: #ffebe7;
@@ -221,7 +228,14 @@ header .search {
 .tags p, .indexco-footer{
   padding: 10px;
 }
+.tags p:hover{
+  color:#020202;
+} 
 .indexco-footer{
   line-height: 1.5;
+}
+
+.indexco a{
+  color:#676767;
 }
 
