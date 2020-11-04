@@ -22,6 +22,7 @@ h2{
 
 p, .top-nav a {
   font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
 }
 
 /*** Header ***/
@@ -83,32 +84,43 @@ header .search {
 }
 
 /*** Hero ***/
-.hero{
+.hero {
   height: 75vh;
-  max-height: 560px;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+  color: white;
 }
- .hero .main{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
-   column-gap: 10px;
-   color: white;
- }
-.top-hero{
+
+.main {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-}
-
-.transition{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
-  width: 66,66%;
+  /* background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png); */
+  /* width: 66,66%;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
+
+.top-hero{
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ padding: 20px;
+ /* background-color: green; */
+}
+
+/* .top-hero .date {
+  margin-top: 20px;
+} */
+
+.top-hero .logo {
+  width: 50%;
+}
+
 .bottom-hero{
   margin-top: 250px;
 }
