@@ -72,3 +72,57 @@ header .search {
   border-left: 1px solid #eee;
 }
 
+/*** Hero ***/
+.hero{
+  height: 75vh;
+  max-height: 560px;
+  padding: 10px;
+}
+ .hero .main{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   column-gap: 10px;
+ }
+.top-hero{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.transition{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
+  width: 66,66%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-hero{
+  margin-top: 250px;
+}
+.bottom-hero h3{
+ font-size: 300%;
+ font-weight: bold;
+}
+
+.main .aside{
+  display:grid;
+  gap:10px
+}
+
+.hero .aside .news1{
+  background-image:url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.hero .aside .news2{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+
+}
