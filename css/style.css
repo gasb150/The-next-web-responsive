@@ -94,19 +94,16 @@ header .search {
 }
 
 .main {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png), 
+                    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
   background-repeat: no-repeat;
+  /* background-position: right bottom; */
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  /* background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png); */
-  /* width: 66,66%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-around; */
 }
 
 .top-hero {
@@ -137,14 +134,16 @@ header .search {
 }
 
 .hero .aside .news1{
-  background-image:url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
   background-size: cover;
   display: flex;
   align-items: flex-end;
 }
 
 .hero .aside .news2{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
