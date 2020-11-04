@@ -135,8 +135,8 @@ header .search {
 .hero .aside .news1{
   /* height: 50%; */
   background-image:url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
-  /* background-size: cover;
-  display: flex;
+  background-size: cover
+  /* display: flex;
   align-items: flex-end; */
 
 }
