@@ -32,18 +32,6 @@ h2 {
   font-weight: 900;
 }
 
-
-@media only screen and (min-width: 767px) {
-  .hero h1 {
-    font-size: 300%;
-    font-weight: 900;
-  }
-  
-  .hero h2 {
-    font-size: 150%;
-  }
-}
-
 h3 {
   padding: 10px 0;
 }
@@ -64,6 +52,10 @@ p, .top-nav a {
 }
 
 /*** Header ***/
+
+header{
+  background-color: white;
+}
 
 header .top-nav {
   background-color:#131313;
@@ -156,6 +148,16 @@ header .nav {
 
   .hamberger {
     display: none;
+  }
+}
+
+nav .hide {
+  display: none;
+}
+
+@media only screen and (min-width: 1213px) {
+  nav .hide {
+    display: inline-block;
   }
 }
 
@@ -324,6 +326,7 @@ main {
 
   .news img, .deals img {
     width: 100%;
+    height: 201px;
     margin-right: 0;
   }
 
@@ -566,6 +569,7 @@ main {
 }
 
 footer{
+  display: flex;
   background-color: #131313;
   align-items: center;
   flex-direction: column;
@@ -573,6 +577,7 @@ footer{
 
 .contact{
   display: flex; 
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -580,7 +585,8 @@ footer{
 
 .icons{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 40px;
 }
 
@@ -609,12 +615,12 @@ footer .icons .fab:hover, footer .icons .fas:hover,footer  .iconify:hover{
 
 .copyright {
   background-color: black;
-  display: flex;
   padding:40px;
-  justify-content: center;
+  text-align: center;
 }
 
 .copyright .logo {
   width: 45px;
   padding: 0 5px;
 }
+
