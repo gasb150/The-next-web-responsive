@@ -18,19 +18,28 @@ h1, h2, h3, h4, h5, .bottom-nav a {
   cursor: pointer;
 }
 
-h1, h2 {
+h1 {
+  font-size: 300%;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+.hero h1, .hero h2 {
   font-size: 120%;
   font-weight: 900;
 }
 
 
 @media only screen and (min-width: 767px) {
-  h1 {
+  .hero h1 {
     font-size: 300%;
     font-weight: 900;
   }
   
-  h2 {
+  .hero h2 {
     font-size: 150%;
   }
 }
@@ -277,19 +286,53 @@ main {
 
 .news .articles , .deals .articles{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-top: 20px;
 }
 
+@media only screen and (min-width: 767px) {
+  .news .articles , .deals .articles{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .news .articles , .deals .articles{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.news figure {
+  display: flex;
+}
+
+.news figure h3 {
+  padding-top: 0;
+}
+
 .news img, .deals img {
-  width: 100%;
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
-.news img{
-  height: 150px;
+@media only screen and (min-width: 767px) {
+  .news figure {
+    display: block;
+  }
+
+  .news img, .deals img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .news img{
+    height: 150px;
+  }
 }
+
+
+
 
 .indexco {
   display: grid;
