@@ -17,6 +17,7 @@ a {
 h1, h2, h3, h4, h5, .bottom-nav a {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 h1 {
@@ -182,7 +183,7 @@ header .search {
   color: #ff4422;
 }
 
-.news .articles h3:hover, .funding .title a {
+.news .articles h3:hover, .funding .title a, .deals .articles h3:hover {
   color:#ff4422;
   cursor: pointer;
   font-weight: bold;
@@ -299,7 +300,7 @@ header .search {
   color: white;
 }
 
-.articles2 h2:hover {
+.articles2 .image h2:hover {
   text-decoration: underline;
   color: white;
 }
