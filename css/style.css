@@ -301,11 +301,11 @@ main {
   }
 }
 
-.news figure {
+.news figure, .deals figure {
   display: flex;
 }
 
-.news figure h3 {
+.news figure h3, .deals figure h3 {
   padding-top: 0;
 }
 
