@@ -132,6 +132,7 @@ header {
   top: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 header .nav {
@@ -331,13 +332,25 @@ main {
   }
 }
 
+.indexco {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:25px;
+}
 
+.hide {
+  display:none;
+}
 
-
+@media only screen and (min-width: 1023px) {
 .indexco {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap:25px;
+}
+.hide{
+  display: block;
+}
 }
 
 .indexco * {
@@ -357,21 +370,44 @@ main {
   border-top: 1px solid #eee;
 }
 
-.title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.title h2{
+  padding-bottom: 10px;
 }
 
 .funding .title li{
-  display: inline-block;
-  padding: 0 10px;
+  /* display: inline-block; */
   color: #ff4422;
+  padding: 5px 0;
 }
 
+@media only screen and (min-width: 767px) {
+.funding .title li{
+  display: inline-block;
+  padding: 0 10px;
+}
+.funding .title li:first-child{
+  padding-left: 0;
+}
 .funding .title li:not(:first-child) {
   border-left: 1px solid #ff4422;
 }
+}
+
+
+@media only screen and (min-width: 1023px) {
+  .title{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  .funding .title li{
+    padding: 0 10px;   
+  }
+  
+}
+
+
+
 
 .indexco h3, .value p {
   margin-left: 90px;
