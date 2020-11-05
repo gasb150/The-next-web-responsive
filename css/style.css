@@ -57,6 +57,7 @@ header nav {
   justify-content: space-between;
 }
 
+
 header li a , footer li a, footer .copyright{
   color: #a9a9a9;
 }
@@ -112,12 +113,18 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  display: flex;
+}
+
+header .nav {
+  flex: 1;
 }
 
 /*** Main ***/
 main {
   margin-top: 60px;
 }
+
 .hero {
   height: 75vh;
   padding: 10px;
@@ -127,27 +134,45 @@ main {
   color: white;
 }
 
+.top-logo {
+  background-color: black;
+  width: 80px;
+  padding: 20px;
+}
+
 .main {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png), 
-                    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
                     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 20px;
 }
 
-.top-hero {
- display: flex;
- justify-content: space-between;
- align-items: flex-start;
-
+@media only screen and (min-width: 1024px) {
+  .main {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png), 
+                      linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+                      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
+    justify-content: space-between;
+  }
 }
 
-.top-hero .logo {
-  width: 50%;
+.top-hero {
+ display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .top-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   }
+   .top-hero .logo {
+     width: 50%;
+   }
 }
 
 .bottom-hero h1, .aside h2, .articles2 h2 {
