@@ -1,7 +1,5 @@
 body {
   background-color: white;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 .container {
@@ -106,6 +104,11 @@ header .search {
   border-left: 1px solid #eee;
 }
 
+header {
+  /* padding-right: 20px; */
+  /* position: fixed; */
+}
+
 /*** Hero ***/
 .hero {
   height: 75vh;
@@ -174,7 +177,6 @@ header .search {
 .news2 {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
                     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
-  /* background-size: cover; */
 }
 
 .container h2 {
@@ -390,15 +392,15 @@ header .search {
 }
 
 footer{
-  display: flex;
-  justify-content: center;
   background-color: #131313;
   align-items: center;
   flex-direction: column;
 }
 
 .contact{
-  width: 30%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -416,6 +418,7 @@ footer .icons .fab, footer .icons .fas,footer  .iconify{
   height: 16px;
   width: 16px;
   border: 2px solid #333333;
+  margin: 0 10px;
 }
 
 footer .icons .fab:hover, footer .icons .fas:hover,footer  .iconify:hover{
@@ -431,8 +434,7 @@ footer .icons .fab:hover, footer .icons .fas:hover,footer  .iconify:hover{
 }
 
 .copyright {
-  background-color: #000000;
-  width: 100%;
+  background-color: black;
   display: flex;
   padding:40px;
   justify-content: center;
