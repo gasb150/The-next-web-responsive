@@ -332,10 +332,12 @@ main {
   }
 }
 
-.indexco {
+@media only screen and (min-width: 767px) {
+  .indexco {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap:25px;
+}
 }
 
 .hide {
@@ -447,10 +449,23 @@ main {
 
 .articles2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  color: white;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    color: white;
 }
+@media only screen and (min-width: 767px) {
+  .articles2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .articles2 {   
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
 
 .articles2 .image {
   height: 300px;
