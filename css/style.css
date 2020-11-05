@@ -333,3 +333,19 @@ header .search {
   overflow: auto;
 }
 
+.articles2 li {
+  color: #676767;
+  line-height: 1.2;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #ff4422;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
