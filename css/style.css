@@ -24,7 +24,7 @@ h1 {
   font-weight: 900;
 }
 
-h2{
+h2 {
   font-size: 150%;
 }
 
@@ -292,7 +292,7 @@ header .search {
   margin-top: 10px;
 }
 
-.articles2 h2 {
+.articles2 .image h2 {
   color: white;
 }
 
@@ -307,11 +307,35 @@ header .search {
 }
 .articles2 .apps {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
+                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/car-what3words-here-navigation-satnav-future-ev-travel-car-368x276.jpg);
 }
 .articles2 .gear {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Snag_1ca26740-368x276.png);
+}
+.articles2 .tech {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/image-14-368x276.png);
+}
+.articles2 .creative {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg);
+}
+.articles2 .podium {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/google-logo-podium-368x276.png);
+}
+.articles2 .insights {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/freelancer-startup-gq-368x276.png);
+}
+.articles2 .launch {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg);
+}
+.articles2 .distract {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/WDL_screen_CoOp_e3_190610_2pm_PST_1560170638-368x276.jpeg);
 }
 
 .articles2 figure {
