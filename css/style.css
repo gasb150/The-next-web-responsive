@@ -18,13 +18,21 @@ h1, h2, h3, h4, h5, .bottom-nav a {
   cursor: pointer;
 }
 
-h1 {
-  font-size: 300%;
+h1, h2 {
+  font-size: 120%;
   font-weight: 900;
 }
 
-h2 {
-  font-size: 150%;
+
+@media only screen and (min-width: 767px) {
+  h1 {
+    font-size: 300%;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-size: 150%;
+  }
 }
 
 h3 {
@@ -156,9 +164,14 @@ main {
   height: 75vh;
   padding: 10px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 10px;
+  gap: 10px;
   color: white;
+}
+
+@media only screen and (min-width: 767px) {
+  .hero {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 .top-logo {
