@@ -58,11 +58,15 @@ header nav {
 }
 
 header li a , footer li a, footer .copyright{
-  color: #676767;
+  color: #a9a9a9;
 }
 
 header .top-nav a:hover, footer li a:hover{
   color: white;
+}
+
+header .bottom-nav a:hover {
+  color: #131313;
 }
 
 header .top-nav .active {
@@ -105,11 +109,15 @@ header .search {
 }
 
 header {
-  /* padding-right: 20px; */
-  /* position: fixed; */
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
-/*** Hero ***/
+/*** Main ***/
+main {
+  margin-top: 60px;
+}
 .hero {
   height: 75vh;
   padding: 10px;
