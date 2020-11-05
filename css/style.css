@@ -317,7 +317,7 @@ main {
 }
 
 @media only screen and (min-width: 767px) {
-  .news figure {
+  .news figure, .deals figure {
     display: block;
   }
 
