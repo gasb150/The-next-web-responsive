@@ -392,7 +392,7 @@ header .search {
 footer{
   display: flex;
   justify-content: center;
-  background-color: hsl(0, 0%, 7%);
+  background-color: #131313;
   align-items: center;
   flex-direction: column;
 }
@@ -401,6 +401,7 @@ footer{
   width: 30%;
   padding: 20px;
 }
+
 .icons{
   display: flex;
   justify-content: space-between;
@@ -416,6 +417,7 @@ footer .icons .fab, footer .icons .fas,footer  .iconify{
   width: 16px;
   border: 2px solid #333333;
 }
+
 footer .icons .fab:hover, footer .icons .fas:hover,footer  .iconify:hover{
   background-color: transparent;
 }
@@ -423,18 +425,20 @@ footer .icons .fab:hover, footer .icons .fas:hover,footer  .iconify:hover{
 .contact nav ul{
   text-align: center;
 }
+
 .contact nav li{
   display: inline-block;
 }
 
-.copyright{
+.copyright {
   background-color: #000000;
   width: 100%;
   display: flex;
-  padding:20px;
+  padding:40px;
   justify-content: center;
 }
-.copyright .logo{
+
+.copyright .logo {
   width: 45px;
-  padding:0px 5px;
+  padding: 0 5px;
 }
