@@ -12,7 +12,29 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, .bottom-nav a {
+.copyright {
+  background-color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+
+header li a,
+footer li a,
+footer .copyright {
+  color: #a9a9a9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.bottom-nav a {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   cursor: pointer;
@@ -27,7 +49,8 @@ h2 {
   font-size: 150%;
 }
 
-.hero h1, .hero h2 {
+.hero h1,
+.hero h2 {
   font-size: 120%;
   font-weight: 900;
 }
@@ -36,8 +59,9 @@ h3 {
   padding: 10px 0;
 }
 
-h4, h5 {
-  color: #ff4422;
+h4,
+h5 {
+  color: #f42;
   line-height: 1.2;
 }
 
@@ -46,19 +70,26 @@ h4 {
   padding-bottom: 5px;
 }
 
-p, .top-nav a {
+p,
+.top-nav a {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
 }
 
 /*** Header ***/
 
-header{
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
   background-color: white;
 }
 
 header .top-nav {
-  background-color:#131313;
+  background-color: #131313;
 }
 
 header nav {
@@ -66,13 +97,44 @@ header nav {
   justify-content: space-between;
 }
 
-
-header li a , footer li a, footer .copyright{
-  color: #a9a9a9;
+.indexco a {
+  color: #676767;
 }
 
-header .top-nav a:hover, footer li a:hover{
+.deals a {
+  color: #f42;
+}
+
+footer li a:hover {
   color: white;
+}
+
+.funding .title a {
+  color: #f42;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header .top-nav a:hover {
+  color: white;
+}
+
+.indexco h3,
+.value p {
+  margin-left: 90px;
+  padding-bottom: 10px;
+}
+
+.news figure h3,
+.deals figure h3 {
+  padding-top: 0;
+}
+
+.news .articles h3:hover,
+.deals .articles h3:hover {
+  color: #f42;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 header .bottom-nav a:hover {
@@ -89,13 +151,16 @@ header li {
   font-size: 13px;
 }
 
-header .bottom-nav li {
-  padding: 15px 5px;
+.articles2 li {
+  color: #676767;
+  line-height: 1.2;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  list-style-type: none;
 }
 
-header a {
-  display: flex;
-  align-items: center;
+header .bottom-nav li {
+  padding: 15px 5px;
 }
 
 header a i {
@@ -106,38 +171,31 @@ header .bottom-nav {
   background-color: white;
 }
 
-header .search i {
-  padding: 0 5px;
-  color: #a9a9a9;
-  transform: rotate(90deg);
-}
-
 header .search {
   background-color: white;
   border: 0;
   border-left: 1px solid #eee;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  z-index: 999;
+.hamberger i {
+  padding: 10px;
+  border-left: 1px solid #eee;
+  color: #f42;
 }
 
-header .nav {
-  display: none;
+header .search i {
+  padding: 0 5px;
+  color: #a9a9a9;
+  transform: rotate(90deg);
 }
 
-.hamberger .search, .hamberger i {
+.hamberger .search {
   padding: 10px;
   border-left: 1px solid #eee;
 }
 
-.hamberger i {
-  color: #ff4422;
+header .nav {
+  display: none;
 }
 
 @media only screen and (min-width: 767px) {
@@ -151,7 +209,7 @@ header .nav {
   }
 }
 
-nav .hide {
+.hide {
   display: none;
 }
 
@@ -200,8 +258,9 @@ main {
 }
 
 .main {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -212,15 +271,16 @@ main {
 
 @media only screen and (min-width: 1024px) {
   .main {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png), 
-                      linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
+    background-image:
+      url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
+                      linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
     justify-content: space-between;
   }
 }
 
 .top-hero {
- display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -228,13 +288,16 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-   }
-   .top-hero .logo {
-     width: 50%;
-   }
+  }
+
+  .top-hero .logo {
+    width: 50%;
+  }
 }
 
-.bottom-hero h1, .aside h2, .articles2 h2 {
+.bottom-hero h1,
+.aside h2,
+.articles2 h2 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
@@ -243,16 +306,18 @@ main {
   display: grid;
   height: 100%;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 10px
+  grid-gap: 10px;
 }
 
-.hero .aside .news1, .image {
+.hero .aside .news1,
+.image {
   padding: 20px;
 }
 
 .hero .aside .news1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg);
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -267,52 +332,54 @@ main {
 }
 
 .news2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/uber-lyft-ride-sharing-gig-prop-22-ride-hailing-future-ab5-california-car-taxi-796x448.jpg);
 }
 
 .container h2 {
   display: flex;
   align-items: baseline;
-  color: #ff4422;
+  color: #f42;
 }
 
-.news .articles h3:hover, .funding .title a, .deals .articles h3:hover {
-  color:#ff4422;
-  cursor: pointer;
-  font-weight: bold;
+.title h2 {
+  padding-bottom: 10px;
 }
 
-.container h2:hover, .funding .title a:hover {
+.container h2:hover,
+.funding .title a:hover {
   color: #131313;
 }
 
-.news .articles , .deals .articles{
+.news .articles,
+.deals .articles {
   display: grid;
   gap: 20px;
   margin-top: 20px;
 }
 
 @media only screen and (min-width: 767px) {
-  .news .articles , .deals .articles{
+  .news .articles,
+  .deals .articles {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media only screen and (min-width: 1024px) {
-  .news .articles , .deals .articles{
+  .news .articles,
+  .deals .articles {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.news figure, .deals figure {
+.news figure,
+.deals figure {
   display: flex;
 }
 
-.news figure h3, .deals figure h3 {
-  padding-top: 0;
-}
-
-.news img, .deals img {
+.news img,
+.deals img {
   width: 75px;
   height: 75px;
   margin-right: 10px;
@@ -320,42 +387,41 @@ main {
 }
 
 @media only screen and (min-width: 767px) {
-  .news figure, .deals figure {
+  .news figure,
+  .deals figure {
     display: block;
   }
 
-  .news img, .deals img {
+  .news img,
+  .deals img {
     width: 100%;
     height: 201px;
     margin-right: 0;
   }
 
-  .news img{
+  .news img {
     height: 150px;
   }
 }
 
 @media only screen and (min-width: 767px) {
   .indexco {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:25px;
-}
-}
-
-.hide {
-  display:none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
 }
 
 @media only screen and (min-width: 1023px) {
-.indexco {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap:25px;
-}
-.hide{
-  display: block;
-}
+  .indexco {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  .hide {
+    display: block;
+  }
 }
 
 .indexco * {
@@ -375,52 +441,50 @@ main {
   border-top: 1px solid #eee;
 }
 
-.title h2{
-  padding-bottom: 10px;
+.contact nav li {
+  display: inline-block;
 }
 
-.funding .title li{
-  /* display: inline-block; */
-  color: #ff4422;
+.funding .title li {
+  color: #f42;
   padding: 5px 0;
 }
 
 @media only screen and (min-width: 767px) {
-.funding .title li{
-  display: inline-block;
-  padding: 0 10px;
-}
-.funding .title li:first-child{
-  padding-left: 0;
-}
-.funding .title li:not(:first-child) {
-  border-left: 1px solid #ff4422;
-}
-}
+  .funding .title li {
+    display: inline-block;
+    padding: 0 10px;
+  }
 
+  .funding .title li:first-child {
+    padding-left: 0;
+  }
+
+  .funding .title li:not(:first-child) {
+    border-left: 1px solid #f42;
+  }
+}
 
 @media only screen and (min-width: 1023px) {
-  .title{
+  .title {
     display: flex;
-   justify-content: space-between;
-   align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
-  .funding .title li{
-    padding: 0 10px;   
+
+  .funding .title li {
+    padding: 0 10px;
   }
-  
 }
 
-
-
-
-.indexco h3, .value p {
-  margin-left: 90px;
-  padding-bottom: 10px;
+.hide-all {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .background-tittle {
-  background-color: #ff4422;
+  background-color: #f42;
   color: white;
 }
 
@@ -433,42 +497,45 @@ main {
 }
 
 .tags {
-  padding: 15px 0; 
+  padding: 15px 0;
 }
 
-.tags p, .indexco-footer {
+.tags p,
+.indexco-footer {
   padding: 10px;
 }
+
+.deals p {
+  font-size: 20px;
+  color: #424141;
+}
+
 .tags p:hover {
-  color:#020202;
-} 
+  color: #020202;
+}
+
 .indexco-footer {
   line-height: 1.5;
 }
 
-.indexco a {
-  color:#676767;
-}
-
 .articles2 {
   display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    color: white;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  color: white;
 }
+
 @media only screen and (min-width: 767px) {
-  .articles2{
+  .articles2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 1023px) {
-  .articles2 {   
+  .articles2 {
     grid-template-columns: repeat(3, 1fr);
   }
-  
 }
-
 
 .articles2 .image {
   height: 300px;
@@ -485,40 +552,57 @@ main {
 }
 
 .articles2 .hard-fork {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
 }
+
 .articles2 .apps {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-                    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/car-what3words-here-navigation-satnav-future-ev-travel-car-368x276.jpg);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/car-what3words-here-navigation-satnav-future-ev-travel-car-368x276.jpg);
 }
+
 .articles2 .gear {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Snag_1ca26740-368x276.png);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Snag_1ca26740-368x276.png);
 }
+
 .articles2 .tech {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/image-14-368x276.png);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/image-14-368x276.png);
 }
+
 .articles2 .creative {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg);
 }
+
 .articles2 .podium {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/google-logo-podium-368x276.png);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/google-logo-podium-368x276.png);
 }
+
 .articles2 .insights {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/freelancer-startup-gq-368x276.png);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/freelancer-startup-gq-368x276.png);
 }
+
 .articles2 .launch {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg);
 }
+
 .articles2 .distract {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
-  url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/WDL_screen_CoOp_e3_190610_2pm_PST_1560170638-368x276.jpeg);
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/WDL_screen_CoOp_e3_190610_2pm_PST_1560170638-368x276.jpeg);
 }
 
 .articles2 figure {
@@ -540,82 +624,64 @@ main {
   overflow: auto;
 }
 
-.articles2 li {
-  color: #676767;
-  line-height: 1.2;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  list-style-type: none;
-}
-
 .articles2 ul li::before {
   content: "\2022";
-  color: #ff4422;
+  color: #f42;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
 
-.deals p {
-  font-size:20px;
-  color: #424141;
-}
-.deals p .p1{
+.deals p .p1 {
   text-decoration: line-through;
   margin-right: 5px;
   font-size: 10px;
   color: #9b9494;
 }
 
-footer{
+footer {
   display: flex;
   background-color: #131313;
   align-items: center;
   flex-direction: column;
 }
 
-.contact{
-  display: flex; 
+.contact {
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 40px;
 }
 
-footer .icons .fab, footer .icons .fas,footer  .iconify{
+footer .icons .fab,
+footer .icons .fas,
+footer .iconify {
   border-radius: 50%;
-  background-color:#333333;
+  background-color: #333;
   padding: 10px;
   color: white;
   height: 16px;
   width: 16px;
-  border: 2px solid #333333;
+  border: 2px solid #333;
   margin: 0 10px;
 }
 
-footer .icons .fab:hover, footer .icons .fas:hover,footer  .iconify:hover{
+footer .icons .fab:hover,
+footer .icons .fas:hover,
+footer .iconify:hover {
   background-color: transparent;
 }
 
-.contact nav ul{
-  text-align: center;
-}
-
-.contact nav li{
-  display: inline-block;
-}
-
-.copyright {
-  background-color: black;
-  padding:40px;
+.contact nav ul {
   text-align: center;
 }
 
@@ -623,4 +689,3 @@ footer .icons .fab:hover, footer .icons .fas:hover,footer  .iconify:hover{
   width: 45px;
   padding: 0 5px;
 }
-
