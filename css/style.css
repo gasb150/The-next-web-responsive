@@ -377,15 +377,12 @@ header .search {
   width: 1em;
   margin-left: -1em;
 }
-.offert{
-  display: flex;
-  align-items: center;
-}
-.offert p{
+
+.deals p {
   font-size:20px;
   color: #424141;
 }
-.offert .p1{
+.deals p .p1{
   text-decoration: line-through;
   margin-right: 5px;
   font-size: 10px;
