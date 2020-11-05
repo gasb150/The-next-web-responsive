@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, .bottom-nav a {
+h1, h2, h3, h4, h5, .bottom-nav a {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
 }
@@ -30,6 +30,16 @@ h2{
 
 h3 {
   padding: 10px 0;
+}
+
+h4, h5 {
+  color: #ff4422;
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: normal;
+  padding-bottom: 5px;
 }
 
 p, .top-nav a {
@@ -303,3 +313,23 @@ header .search {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
   url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/elonstonks-368x276.jpg);
 }
+
+.articles2 figure {
+  background-color: #fff4f2;
+  margin-top: 5px;
+}
+
+.articles2 figcaption {
+  padding: 20px;
+}
+
+.articles2 figure img {
+  width: 96px;
+  height: 96px;
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
