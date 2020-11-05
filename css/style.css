@@ -76,12 +76,12 @@ header .top-nav .active {
 
 header li {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 5px;
   font-size: 13px;
 }
 
 header .bottom-nav li {
-  padding: 15px 10px;
+  padding: 15px 5px;
 }
 
 header a {
@@ -99,7 +99,7 @@ header .bottom-nav {
 
 header .search i {
   padding: 0 5px;
-  color: #676767;
+  color: #a9a9a9;
   transform: rotate(90deg);
 }
 
@@ -114,15 +114,42 @@ header {
   width: 100%;
   top: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 header .nav {
-  flex: 1;
+  display: none;
+}
+
+.hamberger .search, .hamberger i {
+  padding: 10px;
+  border-left: 1px solid #eee;
+}
+
+.hamberger i {
+  color: #ff4422;
+}
+
+@media only screen and (min-width: 767px) {
+  header .nav {
+    display: block;
+    flex: 1;
+  }
+
+  .hamberger {
+    display: none;
+  }
 }
 
 /*** Main ***/
 main {
-  margin-top: 60px;
+  margin-top: 35px;
+}
+
+@media only screen and (min-width: 767px) {
+  main {
+    margin-top: 60px;
+  }
 }
 
 .hero {
@@ -137,7 +164,14 @@ main {
 .top-logo {
   background-color: black;
   width: 80px;
-  padding: 20px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .top-logo {
+    display: none;
+    padding: 20px;
+  }
 }
 
 .main {
