@@ -192,17 +192,20 @@ header .search {
   color: #131313;
 }
 
-.news .articles {
+.news .articles , .deals .articles{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-top: 20px;
 }
 
-.news img {
+.news img, .deals img {
   width: 100%;
-  height: 150px;
   cursor: pointer;
+}
+
+.news img{
+  height: 150px;
 }
 
 .indexco {
@@ -228,13 +231,13 @@ header .search {
   border-top: 1px solid #eee;
 }
 
-.funding .title {
+.title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.funding .title li {
+.funding .title li{
   display: inline-block;
   padding: 0 10px;
   color: #ff4422;
@@ -365,11 +368,25 @@ header .search {
   list-style-type: none;
 }
 
-ul li::before {
+.articles2 ul li::before {
   content: "\2022";
   color: #ff4422;
   font-weight: bold;
   display: inline-block; 
   width: 1em;
   margin-left: -1em;
+}
+.offert{
+  display: flex;
+  align-items: center;
+}
+.offert p{
+  font-size:20px;
+  color: #424141;
+}
+.offert .p1{
+  text-decoration: line-through;
+  margin-right: 5px;
+  font-size: 10px;
+  color: #9b9494;
 }
