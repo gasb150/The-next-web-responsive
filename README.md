@@ -4,7 +4,7 @@
 
 ![screenshot](../features/screenshot.png)
 
-In this project, we clone tThe Next Web homepage using semantic HTML5 elements that are appropriately sized and positioned. We used flexbox, css grid, and positioning to position the various elements. We made the background  with images and gradientes. We used media query to made page responsive at two main break points 1024px and 767px.
+In this project, we clone the Next Web homepage using semantic HTML5 elements that are appropriately sized and positioned. We used flexbox, CSS grid, and positioning to position the various elements. We made the background with images and gradients. We use media queries to make the page responsive at two main breakpoints 1024px and 767px.
 
 ## Live Demo 
 
