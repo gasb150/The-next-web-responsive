@@ -18,7 +18,6 @@ a {
   text-align: center;
 }
 
-
 header a {
   display: flex;
   align-items: center;
@@ -691,7 +690,8 @@ footer .iconify:hover {
   width: 45px;
   padding: 0 5px;
 }
-.copy-background{
+
+.copy-background {
   background-color: black;
   width: 100%;
 }
