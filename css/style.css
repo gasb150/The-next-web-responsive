@@ -209,8 +209,7 @@ header .nav {
   }
 }
 
-.hide,
-.hide-article {
+.hide, .hide-article {
   display: none;
 }
 
@@ -278,7 +277,7 @@ main {
   .main {
     background-image:
       url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
-                      linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+          linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
       url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-haiku-review-doogee-s95-pro-796x448.png);
     justify-content: space-between;
   }
