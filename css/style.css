@@ -18,7 +18,8 @@ a {
   text-align: center;
 }
 
-header a, footer a {
+header a,
+footer a {
   display: flex;
   align-items: center;
   color: #9b9494;
