@@ -714,7 +714,9 @@ footer .icons .fas:hover,
 footer .iconify:hover {
   background-color: transparent;
 }
-
+.contact nav{
+  display: block;
+}
 .contact nav ul {
   text-align: center;
 }
