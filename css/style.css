@@ -689,3 +689,8 @@ footer .iconify:hover {
   width: 45px;
   padding: 0 5px;
 }
+
+.copy-background {
+  background-color: black;
+  width: 100%;
+}
