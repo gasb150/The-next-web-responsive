@@ -18,9 +18,10 @@ a {
   text-align: center;
 }
 
-header a {
+header a, footer a {
   display: flex;
   align-items: center;
+  color: #9b9494;
 }
 
 header li {
@@ -136,6 +137,7 @@ nav,
 .sticky-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -247,7 +249,7 @@ header .nav,
 
 @media only screen and (min-width: 767px) {
   header .nav {
-    display: block;
+    display: flex;
     flex: 1;
   }
 
