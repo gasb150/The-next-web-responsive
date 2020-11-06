@@ -24,6 +24,7 @@ header a {
 }
 
 header li a,
+.bottom-nav li a,
 footer li a,
 footer .copyright {
   color: #a9a9a9;
@@ -58,6 +59,14 @@ h2 {
 @media only screen and (min-width: 767px) {
   .hero h1 {
     font-size: 300%;
+  }
+
+  .first {
+    visibility: hidden;
+  }
+
+  .second {
+    margin-top: -10px;
   }
 }
 
@@ -94,22 +103,36 @@ p,
 /*** Header ***/
 
 header {
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   z-index: 999;
   background-color: white;
 }
 
+
+@media only screen and (min-width: 767px) {
+  header {
+    position: static;
+    background-color: black;
+  }
+
+ .bottom-nav {
+    position: sticky;
+    top: 0;
+  }
+}
+
 header .top-nav {
   background-color: #131313;
 }
 
-header nav {
+nav, .sticky-nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .indexco a {
@@ -152,7 +175,7 @@ header .top-nav a:hover {
   font-weight: bold;
 }
 
-header .bottom-nav a:hover {
+.bottom-nav a:hover {
   color: #131313;
 }
 
@@ -160,7 +183,7 @@ header .top-nav .active {
   color: white;
 }
 
-header li {
+header li, .bottom-nav li {
   display: inline-block;
   padding: 5px 5px;
   font-size: 13px;
@@ -174,7 +197,7 @@ header li {
   list-style-type: none;
 }
 
-header .bottom-nav li {
+.bottom-nav li, header li {
   padding: 15px 5px;
 }
 
@@ -182,11 +205,11 @@ header a i {
   padding: 0 5px;
 }
 
-header .bottom-nav {
+.bottom-nav {
   background-color: white;
 }
 
-header .search {
+.search {
   background-color: white;
   border: 0;
   border-left: 1px solid #eee;
@@ -198,7 +221,7 @@ header .search {
   color: #f42;
 }
 
-header .search i {
+.search i {
   padding: 0 5px;
   color: #a9a9a9;
   transform: rotate(90deg);
@@ -209,7 +232,7 @@ header .search i {
   border-left: 1px solid #eee;
 }
 
-header .nav {
+header .nav, .bottom-nav {
   display: none;
 }
 
@@ -217,6 +240,11 @@ header .nav {
   header .nav {
     display: block;
     flex: 1;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .hamberger {
@@ -235,15 +263,6 @@ header .nav {
 }
 
 /*** Main ***/
-main {
-  margin-top: 35px;
-}
-
-@media only screen and (min-width: 767px) {
-  main {
-    margin-top: 60px;
-  }
-}
 
 .hero {
   height: 75vh;
