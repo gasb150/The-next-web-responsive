@@ -209,7 +209,7 @@ header .nav {
   }
 }
 
-.hide {
+.hide, .hide-article {
   display: none;
 }
 
@@ -254,6 +254,10 @@ main {
   .top-logo {
     display: none;
     padding: 20px;
+  }
+
+  .hide-article {
+    display: block;
   }
 }
 
