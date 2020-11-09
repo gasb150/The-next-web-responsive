@@ -304,6 +304,10 @@ header .nav,
     display: none;
     padding: 20px;
   }
+  
+  .hero {
+    height: 75vh;
+  }
 
   .hide-article {
     display: block;
