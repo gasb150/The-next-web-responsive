@@ -1,10 +1,10 @@
 # The Next Web Responsive
 
-> In this project we did a responsive design of The Next Web Homepage
+> In this project, we create a responsive design of The Next Web Homepage
 
 ![screenshot](../features/screenshot.png)
 
-In this project, we clone the Next Web homepage using semantic HTML5 elements that are appropriately sized and positioned. We used flexbox, CSS grid, and positioning to position the various elements. We made the background with images and gradients. We use media queries to make the page responsive at two main breakpoints 1024px and 767px.
+In this project, we clone the Next Web homepage using semantic HTML5 elements sized and positioned, using flexbox, CSS grid to place these elements in the right place. We made the background with images and gradients. Implementing the media queries technique to make the page responsive at two main breakpoints: 1024 pixels and 767 pixels.
 
 ## Live Demo 
 
